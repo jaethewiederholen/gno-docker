@@ -22,8 +22,10 @@ export ADDRESS=$(grep -o '"address": *"[^"]*"' /config/secrets/priv_validator_ke
 touch /var/log/gnoland/gnoland-$(hostname -i).log
 cat /proc/1/fd/2 /proc/1/fd/1 > /var/log/gnoland/gnoland-$(hostname -i).log &
 
-gnoland config init \
--config-path /data/config/config.toml
+# gnoland config init \
+# -config-path /data/config/config.toml
+
+# cat /data/config/config.toml
 
 # pwd && ls && ls ./data/ 
 # cd /data/config && pwd
