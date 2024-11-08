@@ -16,6 +16,6 @@ echo "Start network"
 echo "--------------------"
 
 docker compose build
-docker compose up
+docker compose up --detach
 
 
