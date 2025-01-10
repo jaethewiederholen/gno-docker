@@ -1,3 +1,5 @@
+#!/bin/bash
+
 NO_LOCK_REQUIRED=false
 
 . ./.env.sh
