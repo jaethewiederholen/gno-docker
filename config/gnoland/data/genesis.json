@@ -24,33 +24,6 @@
       },
       "power": "1",
       "name": "validator1"
-    },
-    {
-      "address": "g1gkdgz8uh9klnch82ys8rzgsaqhpauzudp8lupj",
-      "pub_key": {
-        "@type": "/tm.PubKeyEd25519",
-        "value": "lqhDJG9RU6oEPFWxNbKJpYl2opdzbQujTn2095K/JOI="
-      },
-      "power": "1",
-      "name": "validator2"
-    },
-    {
-      "address": "g1ach9mzk0pnkhjuk6vuytxgr92v6fddvnm3cmt0",
-      "pub_key": {
-        "@type": "/tm.PubKeyEd25519",
-        "value": "k4PSvpM3TSARZfFM5QQNXFi6QIDho02YTujnP7OxZy8="
-      },
-      "power": "1",
-      "name": "validator3"
-    },
-    {
-      "address": "g17e4jy6aevwhh6lu683jtjegfqena0e4ukn0dzx",
-      "pub_key": {
-        "@type": "/tm.PubKeyEd25519",
-        "value": "KUr5XqkU0u2CS2vWXdmHujiTjGTZEWNJXVHX0DMu118="
-      },
-      "power": "1",
-      "name": "validator4"
     }
   ],
   "app_hash": null,

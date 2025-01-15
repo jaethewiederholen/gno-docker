@@ -14,7 +14,6 @@ x-gno-def:
     retries: 10
     start_period: 5s
 
-
 services:
   validator1:
     << : *gno-def
@@ -34,70 +33,6 @@ services:
       - ./config/secrets/validator1:/config/secrets
       - ./logs/gnoland:/var/log/gnoland/
     container_name: validator1
-
-  validator2:
-    << : *gno-def
-    hostname: validator2
-    networks:
-      gnoland-bridge:
-        ipv4_address: 172.16.230.12
-    ports:
-      - 22656:26656/tcp
-      - 22657:26657
-      - 8888
-    volumes:
-      - ./config/secrets/validator2:/config/secrets
-      - ./logs/gnoland:/var/log/gnoland/
-    container_name: validator2
-
-  validator3:
-    << : *gno-def
-    hostname: validator3
-    networks:
-      gnoland-bridge:
-        ipv4_address: 172.16.230.13
-    ports:
-      - 23656:26656/tcp
-      - 23657:26657
-      - 8888
-    volumes:
-      - ./config/secrets/validator3:/config/secrets
-      - ./logs/gnoland:/var/log/gnoland/
-    container_name: validator3
-
-  validator4:
-    << : *gno-def
-    hostname: validator4
-    networks:
-      gnoland-bridge:
-        ipv4_address: 172.16.230.14
-    ports:
-      - 24656:26656/tcp
-      - 24657:26657
-      - 8888
-    volumes:
-      - ./config/secrets/validator4:/config/secrets
-      - ./logs/gnoland:/var/log/gnoland/
-    container_name: validator4
-
-  # rpcnode:
-  #   << : *gno-def
-  #   build:
-  #     context: config/gwemix
-  #     args:
-  #       GWEMIX_TAG: ${GWEMIX_TAG:-latest}
-  #   hostname: rpcnode
-  #   networks:
-  #     gnoland-bridge:
-  #       ipv4_address: 172.16.230.15
-  #   ports:
-  #     - 26656:26656/tcp
-  #     - 26657:26657
-  #     - 8888
-  #   volumes:
-  #     - ./config/secrets/rpcnode:/config/secrets
-  #     - ./logs/gwemix:/var/log/gnoland/
-  #   container_name: rpcnode
 
 networks:
   gnoland-bridge:

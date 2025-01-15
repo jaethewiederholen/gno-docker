@@ -122,7 +122,7 @@ proxy_app = "tcp://127.0.0.1:26658"
   max_packet_msg_payload_size = 1024
 
   # Comma separated list of nodes to keep persistent connections to
-  persistent_peers = "g1dlveg2rww5j9lv4cl6tcu2l7haekemq56kw2u0@172.16.230.14:26656,g1qswur0vq3g58tvccw0ssn88sc4vqt2rjm32pph@172.16.230.13:26656,g16lw3uvgtrfv6xzj8u3dlsfdxd3my47tnwdqt39@172.16.230.12:26656,g1fufjqn54cgtk9l8hq987hf4sglgpfryuw0qqdh@172.16.230.11:26656"
+  persistent_peers = ""
 
   # Set true to enable the peer-exchange reactor
   pex = true
